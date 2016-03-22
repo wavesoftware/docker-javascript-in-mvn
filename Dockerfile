@@ -12,5 +12,5 @@ RUN apt-get update -q && apt-get install -y \
   libappindicator1 \
   libindicator7
 RUN curl -o google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-RUN dpkg -i -y google-chrome-stable_current_amd64.deb || apt-get install -f -y
+RUN dpkg -i google-chrome-stable_current_amd64.deb || apt-get install -f -y
 RUN rm -rf /var/lib/apt/lists/*
